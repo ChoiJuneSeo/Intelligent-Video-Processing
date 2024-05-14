@@ -4,7 +4,7 @@
 clear;
 clc;
 
-fname ="Test_cir02.png";
+fname ="p.jpg";
 img = imread(fname);
 figure(1); imshow(img);
 

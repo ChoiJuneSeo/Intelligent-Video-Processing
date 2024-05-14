@@ -3,7 +3,7 @@ clear;
 clc;
 
 % image loading
-fhead = 'baboon';
+fhead = '1';
 fext = 'jpg';
 filename = sprintf('%s.%s',fhead,fext);
 
@@ -21,13 +21,13 @@ imshow(img);
 % image down/up sampling
 % down parameters
 
-pitch = [2,2];
+pitch = [3,3];
 phpit = [0,0];
 
 % imgD = img(1:2:end,1:2:end,:);
 % imgD = img(phpit(1)+1:pitch(1):end,phpit(2)+1:pitch(2):end,:);
 imgD = SamplingDown(img,pitch,phpit);
-
+imwrite(imgD,'down.jpg');
 figure(2);
 imshow(imgD);
 
