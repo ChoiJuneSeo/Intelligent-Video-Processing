@@ -1,5 +1,5 @@
 function [maxval, r, c] = max2d(img)
-%
+
 
 [~, col] = size(img);
 
